@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="The Cookie Jar"
+run/main_scene="res://scenes/control_button_bar.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -20,8 +21,22 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 [dialogic]
 
-directories/dch_directory={}
-directories/dtl_directory={}
+directories/dch_directory={
+"abigail": "res://dialogic/characters/abigail.dch",
+"ben": "res://dialogic/characters/ben.dch",
+"clara": "res://dialogic/characters/clara.dch",
+"jillian": "res://dialogic/characters/jillian.dch",
+"jimothy": "res://dialogic/characters/jimothy.dch",
+"theo": "res://dialogic/characters/theo.dch"
+}
+directories/dtl_directory={
+"intro": "res://dialogic/timelines/intro.dtl"
+}
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
 
 [editor_plugins]
 
