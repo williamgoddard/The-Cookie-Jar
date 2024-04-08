@@ -1,9 +1,10 @@
-[gd_scene load_steps=16 format=3 uid="uid://bse734xak2hog"]
+[gd_scene load_steps=17 format=3 uid="uid://bse734xak2hog"]
 
 [ext_resource type="Texture2D" uid="uid://4ork5yx72bln" path="res://sprites/interface/button_pause.png" id="1_a5o06"]
 [ext_resource type="Texture2D" uid="uid://cvqev7cy1ckkh" path="res://sprites/interface/button_pause_hover.png" id="2_15f3t"]
 [ext_resource type="Texture2D" uid="uid://doq3qupp6orhr" path="res://sprites/interface/button_pause_inactive.png" id="3_pp800"]
 [ext_resource type="Texture2D" uid="uid://iqorjed4lgas" path="res://sprites/interface/button_look.png" id="4_2q300"]
+[ext_resource type="Script" path="res://scripts/PauseButton.gd" id="4_7ehcb"]
 [ext_resource type="Texture2D" uid="uid://cx56cnrtapum8" path="res://sprites/interface/button_look_hover.png" id="5_422ek"]
 [ext_resource type="Texture2D" uid="uid://bwp1s8c5lj58m" path="res://sprites/interface/button_talk.png" id="5_kv4rb"]
 [ext_resource type="Texture2D" uid="uid://bmikgjfgyorr" path="res://sprites/interface/button_move.png" id="6_8rgme"]
@@ -32,6 +33,7 @@ offset_bottom = 704.0
 texture_normal = ExtResource("1_a5o06")
 texture_hover = ExtResource("2_15f3t")
 texture_disabled = ExtResource("3_pp800")
+script = ExtResource("4_7ehcb")
 
 [node name="LookButton" type="TextureButton" parent="."]
 offset_left = 260.0
