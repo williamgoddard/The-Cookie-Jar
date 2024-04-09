@@ -1,5 +1,5 @@
+Where should I go?
 if {Global.current_room} == "jillian's room":
-	Where should I go?
 	- Hallway
 		do Global.set_current_room("hallway")
 	- Bed
