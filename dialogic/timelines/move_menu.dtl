@@ -1,0 +1,6 @@
+if {Global.current_room} == "jillian's room":
+	Where should I go?
+	- Hallway
+		do Global.set_current_room("hallway")
+	- Bed
+		jillian: I can't go back to bed! I have work to do!

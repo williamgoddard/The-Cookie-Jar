@@ -8,4 +8,4 @@ func _ready():
 	texture_click_mask = click_mask
 
 func _pressed():
-	Dialogic.start("move_button")
+	pass

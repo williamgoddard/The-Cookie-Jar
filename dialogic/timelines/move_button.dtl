@@ -1,2 +1,3 @@
-jillian: Oh, of course! That's the [move] button! How could I forget?
-Now I just need to decide where I want to go. My bedroom only has one door, so it's not a very hard choice.
+jillian: Oh, right! That's the [move] button! Now, I just need to choose where I want to go.
+jillian: A trivial choice for one such as me. My room only has one door.
+jump move_menu/

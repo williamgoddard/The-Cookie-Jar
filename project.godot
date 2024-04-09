@@ -18,6 +18,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
+Global="*res://scripts/Global.gd"
 
 [dialogic]
 
@@ -31,7 +32,8 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "intro": "res://dialogic/timelines/intro.dtl",
-"move_button": "res://dialogic/timelines/move_button.dtl"
+"move_button": "res://dialogic/timelines/move_button.dtl",
+"move_menu": "res://dialogic/timelines/move_menu.dtl"
 }
 glossary/default_case_sensitive=true
 layout/style_list=["res://dialogic/styles/normal_dialogue.tres"]
@@ -52,7 +54,7 @@ choices/reveal_delay=0
 choices/reveal_by_input=false
 save/autosave_delay=60.0
 save/encryption_on_exports_only=true
-layout/end_behaviour=2
+layout/end_behaviour=0
 text/autopauses={}
 
 [display]
