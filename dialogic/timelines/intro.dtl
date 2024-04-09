@@ -1,3 +1,5 @@
+[style name="normal_dialogue"]
+[background arg="res://sprites/background/black.png" fade="0.0"]
 jillian: My name is Jillian Clarke.
 jillian: I'm currently studying Criminology at university. I'm in my second year.
 jillian: I spend most mornings monologing to myself in bed. That's what I'm doing right now.
@@ -6,6 +8,7 @@ jillian: When I rock up to the crime scene, alongside my bumbling but loyal side
 jillian: That's right. I'm going to be extremely rich and famous and everyone will praise and love me and invite me to parties.
 jillian: ...
 jillian: But right now... I need to get up. I've got classes today, and I can't afford to be late again.
-[signal]
+[background arg="res://sprites/background/jillian_bedroom.png" fade="1.0"]
 jillian: To leave my bedroom, I should use the [move] button.
 jillian: ... Wait, what's a [move] button?
+[style name="no_dialogue"]

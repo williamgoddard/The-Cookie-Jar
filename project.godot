@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="The Cookie Jar"
-run/main_scene="res://scenes/control_button_bar.tscn"
+run/main_scene="res://scenes/game.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -30,13 +30,37 @@ directories/dch_directory={
 "theo": "res://dialogic/characters/theo.dch"
 }
 directories/dtl_directory={
-"intro": "res://dialogic/timelines/intro.dtl"
+"intro": "res://dialogic/timelines/intro.dtl",
+"move_button": "res://dialogic/timelines/move_button.dtl"
 }
+glossary/default_case_sensitive=true
+layout/style_list=["res://dialogic/styles/normal_dialogue.tres"]
+layout/default_style=""
+variables={}
+text/letter_speed=0.01
+text/initial_text_reveal_skippable=true
+text/text_reveal_skip_delay=0.1
+text/autoadvance_per_character_delay=0.1
+text/autoadvance_ignored_characters_enabled=true
+animations/join_default_length=0.5
+animations/leave_default_length=0.5
+animations/leave_default_wait=true
+animations/join_default_wait=true
+choices/autofocus_first=true
+choices/delay=0.2
+choices/reveal_delay=0
+choices/reveal_by_input=false
+save/autosave_delay=60.0
+save/encryption_on_exports_only=true
+layout/end_behaviour=2
+text/autopauses={}
 
 [display]
 
 window/size/viewport_width=1280
 window/size/viewport_height=720
+window/size/resizable=false
+window/stretch/aspect="expand"
 
 [editor_plugins]
 

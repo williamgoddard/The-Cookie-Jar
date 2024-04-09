@@ -19,9 +19,16 @@
 [ext_resource type="Texture2D" uid="uid://c7txkynckhiua" path="res://sprites/interface/button_notes_inactive.png" id="15_2v4cf"]
 
 [sub_resource type="GDScript" id="GDScript_aipot"]
-script/source = "extends Node
+script/source = "@tool
+extends DialogicLayoutLayer
 
 func _ready():
+	
+	get_node(\"PauseButton\").disabled = Dialogic.VAR.get_variable(\"ControlButtonBar.PauseButtonDisabled\", false)
+	get_node(\"LookButton\").disabled = Dialogic.VAR.get_variable(\"ControlButtonBar.LookButtonDisabled\", false)
+	get_node(\"TalkButton\").disabled = Dialogic.VAR.get_variable(\"ControlButtonBar.TalkButtonDisabled\", false)
+	get_node(\"MoveButton\").disabled = Dialogic.VAR.get_variable(\"ControlButtonBar.MoveButtonDisabled\", false)
+	get_node(\"NotesButton\").disabled = Dialogic.VAR.get_variable(\"ControlButtonBar.NotesButtonDisabled\", false)
 "
 
 [node name="ControlButtonBar" type="Control"]
@@ -30,8 +37,6 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 script = SubResource("GDScript_aipot")
-disabled = false
-apply_overrides_on_ready = false
 
 [node name="PauseButton" type="TextureButton" parent="."]
 layout_mode = 0

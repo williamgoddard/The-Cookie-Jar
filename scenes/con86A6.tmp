@@ -1,6 +1,7 @@
-[gd_scene load_steps=19 format=3 uid="uid://bse734xak2hog"]
+[gd_scene load_steps=18 format=3 uid="uid://bse734xak2hog"]
 
 [ext_resource type="Texture2D" uid="uid://4ork5yx72bln" path="res://sprites/interface/button_pause.png" id="1_a5o06"]
+[ext_resource type="Script" path="res://scripts/control_button_bar.gd" id="1_ux65a"]
 [ext_resource type="Texture2D" uid="uid://cvqev7cy1ckkh" path="res://sprites/interface/button_pause_hover.png" id="2_15f3t"]
 [ext_resource type="Texture2D" uid="uid://doq3qupp6orhr" path="res://sprites/interface/button_pause_inactive.png" id="3_pp800"]
 [ext_resource type="Texture2D" uid="uid://iqorjed4lgas" path="res://sprites/interface/button_look.png" id="4_2q300"]
@@ -14,31 +15,28 @@
 [ext_resource type="Texture2D" uid="uid://cusoxbmojrwkk" path="res://sprites/interface/button_talk_inactive.png" id="9_bhwmy"]
 [ext_resource type="Texture2D" uid="uid://opppv0hb0v3c" path="res://sprites/interface/button_move_hover.png" id="11_pj4lk"]
 [ext_resource type="Texture2D" uid="uid://bkiscnry00ihn" path="res://sprites/interface/button_move_inactive.png" id="12_331vx"]
-[ext_resource type="Script" path="res://scripts/MoveButton.gd" id="14_22654"]
 [ext_resource type="Texture2D" uid="uid://if7x5lghc03r" path="res://sprites/interface/button_notes_hover.png" id="14_f37q3"]
 [ext_resource type="Texture2D" uid="uid://c7txkynckhiua" path="res://sprites/interface/button_notes_inactive.png" id="15_2v4cf"]
-
-[sub_resource type="GDScript" id="GDScript_aipot"]
-script/source = "extends Node
-
-func _ready():
-"
 
 [node name="ControlButtonBar" type="Control"]
 layout_mode = 3
 anchors_preset = 0
+offset_top = 8.0
 offset_right = 40.0
-offset_bottom = 40.0
-script = SubResource("GDScript_aipot")
-disabled = false
-apply_overrides_on_ready = false
+offset_bottom = 48.0
+script = ExtResource("1_ux65a")
+metadata/pause_button_active = false
+metadata/look_button_active = false
+metadata/talk_button_active = false
+metadata/move_button_active = false
+metadata/notes_button_active = false
 
 [node name="PauseButton" type="TextureButton" parent="."]
 layout_mode = 0
 offset_left = 8.0
-offset_top = 612.0
+offset_top = 604.0
 offset_right = 264.0
-offset_bottom = 712.0
+offset_bottom = 704.0
 texture_normal = ExtResource("1_a5o06")
 texture_hover = ExtResource("2_15f3t")
 texture_disabled = ExtResource("3_pp800")
@@ -47,9 +45,9 @@ script = ExtResource("4_7ehcb")
 [node name="LookButton" type="TextureButton" parent="."]
 layout_mode = 0
 offset_left = 260.0
-offset_top = 612.0
+offset_top = 604.0
 offset_right = 516.0
-offset_bottom = 712.0
+offset_bottom = 704.0
 texture_normal = ExtResource("4_2q300")
 texture_hover = ExtResource("5_422ek")
 texture_disabled = ExtResource("6_rlevm")
@@ -58,9 +56,9 @@ script = ExtResource("4_7ehcb")
 [node name="TalkButton" type="TextureButton" parent="."]
 layout_mode = 0
 offset_left = 512.0
-offset_top = 612.0
+offset_top = 604.0
 offset_right = 768.0
-offset_bottom = 712.0
+offset_bottom = 704.0
 texture_normal = ExtResource("5_kv4rb")
 texture_hover = ExtResource("8_5yo6e")
 texture_disabled = ExtResource("9_bhwmy")
@@ -69,20 +67,20 @@ script = ExtResource("4_7ehcb")
 [node name="MoveButton" type="TextureButton" parent="."]
 layout_mode = 0
 offset_left = 764.0
-offset_top = 612.0
+offset_top = 604.0
 offset_right = 1020.0
-offset_bottom = 712.0
+offset_bottom = 704.0
 texture_normal = ExtResource("6_8rgme")
 texture_hover = ExtResource("11_pj4lk")
 texture_disabled = ExtResource("12_331vx")
-script = ExtResource("14_22654")
+script = ExtResource("4_7ehcb")
 
 [node name="NotesButton" type="TextureButton" parent="."]
 layout_mode = 0
 offset_left = 1016.0
-offset_top = 612.0
+offset_top = 604.0
 offset_right = 1272.0
-offset_bottom = 712.0
+offset_bottom = 704.0
 texture_normal = ExtResource("7_towqj")
 texture_hover = ExtResource("14_f37q3")
 texture_disabled = ExtResource("15_2v4cf")
