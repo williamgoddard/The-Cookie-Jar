@@ -1,6 +1,59 @@
 Where should I go?
 if {Global.current_room} == "jillian's room":
 	- Hallway
-		do Global.set_current_room("hallway")
+		do Global.set_current_room("upstairs hallway")
 	- Bed
 		jillian: I can't go back to bed! I have work to do!
+elif {Global.current_room} == "lucas' room":
+	- Hallway
+		do Global.set_current_room("upstairs hallway")
+elif {Global.current_room} == "clara's room":
+	- Hallway
+		do Global.set_current_room("upstairs hallway")
+elif {Global.current_room} == "jimothy's room":
+	- Hallway
+		do Global.set_current_room("upstairs hallway")
+elif {Global.current_room} == "bathroom":
+	- Hallway
+		do Global.set_current_room("upstairs hallway")
+elif {Global.current_room} == "upstairs hallway":
+	- Jillian's Room
+		do Global.set_current_room("jillian's room")
+	- Lucas' Room
+		do Global.set_current_room("lucas' room")
+	- Clara's Room
+		do Global.set_current_room("clara's room")
+	- Jimothy's Room
+		do Global.set_current_room("jimothy's room")
+	- Bathroom
+		do Global.set_current_room("bathroom")
+	- Downstairs
+		do Global.set_current_room("downstairs hallway")
+elif {Global.current_room} == "downstairs hallway":
+	- Abigail's Room
+		do Global.set_current_room("abigail's room")
+	- Benjamin's Room
+		do Global.set_current_room("benjamin's room")
+	- Kitchen
+		do Global.set_current_room("kitchen")
+	- Living Room
+		do Global.set_current_room("living room")
+	- Basement
+		do Global.set_current_room("basement")
+	- Upstairs
+		do Global.set_current_room("upstairs hallway")
+elif {Global.current_room} == "abigail's room":
+	- Hallway
+		do Global.set_current_room("downstairs hallway")
+elif {Global.current_room} == "benjamin's room":
+	- Hallway
+		do Global.set_current_room("downstairs hallway")
+elif {Global.current_room} == "living room":
+	- Hallway
+		do Global.set_current_room("downstairs hallway")
+elif {Global.current_room} == "kitchen":
+	- Hallway
+		do Global.set_current_room("downstairs hallway")
+elif {Global.current_room} == "basement":
+	- Hallway
+		do Global.set_current_room("downstairs hallway")

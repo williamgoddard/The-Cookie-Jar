@@ -8,12 +8,22 @@
 "sound_moods": {},
 "style": ""
 },
-"default_portrait": "",
+"default_portrait": "Default",
 "description": "",
 "display_name": "Jillian",
 "mirror": false,
 "nicknames": ["Jillian Clarke"],
+"offset": Vector2(240, 0),
+"portraits": {
+"Default": {
+"export_overrides": {
+"image": "\"res://sprites/characters/jillian/Jillian Default.png\""
+},
+"mirror": false,
 "offset": Vector2(0, 0),
-"portraits": {},
+"scale": 1,
+"scene": ""
+}
+},
 "scale": 1.0
 }

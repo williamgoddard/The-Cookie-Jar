@@ -36,8 +36,8 @@ directories/dtl_directory={
 "move_menu": "res://dialogic/timelines/move_menu.dtl"
 }
 glossary/default_case_sensitive=true
-layout/style_list=["res://dialogic/styles/normal_dialogue.tres"]
-layout/default_style=""
+layout/style_list=["res://dialogic/styles/VisualNovelDefaultStyle.tres"]
+layout/default_style="res://dialogic/styles/VisualNovelDefaultStyle.tres"
 variables={}
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true
@@ -56,12 +56,15 @@ save/autosave_delay=60.0
 save/encryption_on_exports_only=true
 layout/end_behaviour=0
 text/autopauses={}
+text/autocolor_names=false
 
 [display]
 
 window/size/viewport_width=1280
 window/size/viewport_height=720
+window/size/mode=3
 window/size/resizable=false
+window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 
 [editor_plugins]
