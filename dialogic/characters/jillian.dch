@@ -2,7 +2,7 @@
 "@path": "res://addons/dialogic/Resources/character.gd",
 "@subpath": NodePath(""),
 "_translation_id": "",
-"color": Color(1, 1, 1, 1),
+"color": Color(1, 0, 0.862745, 1),
 "custom_info": {
 "sound_mood_default": "",
 "sound_moods": {},
@@ -12,7 +12,7 @@
 "description": "",
 "display_name": "Jillian",
 "mirror": false,
-"nicknames": ["Jillian Clarke"],
+"nicknames": ["Clarke"],
 "offset": Vector2(240, 0),
 "portraits": {
 "Default": {
