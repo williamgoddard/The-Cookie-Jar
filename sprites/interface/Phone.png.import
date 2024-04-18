@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://8srkmap111qa"
-path="res://.godot/imported/Abigail Default.png-29b0e8c530793f9ac71d292470b24666.ctex"
+uid="uid://b4k1o1pqvj2b0"
+path="res://.godot/imported/Phone.png-1a9f92f97879a6321f651008659e9521.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/interface/Abigail Default.png"
-dest_files=["res://.godot/imported/Abigail Default.png-29b0e8c530793f9ac71d292470b24666.ctex"]
+source_file="res://sprites/interface/Phone.png"
+dest_files=["res://.godot/imported/Phone.png-1a9f92f97879a6321f651008659e9521.ctex"]
 
 [params]
 

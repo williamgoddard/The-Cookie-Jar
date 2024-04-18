@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://bqqd84fvflucc"]
+
+[ext_resource type="PackedScene" uid="uid://duonupy85wi33" path="res://scenes/menu_background.tscn" id="1_5868n"]
+[ext_resource type="PackedScene" uid="uid://nsxlg1300kdl" path="res://scenes/evidence_menu.tscn" id="2_5ir8a"]
+
+[node name="FullEvidenceMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MenuBackground" parent="." instance=ExtResource("1_5868n")]
+layout_mode = 1
+
+[node name="EvidenceMenu" parent="." instance=ExtResource("2_5ir8a")]
+layout_mode = 1
+offset_left = 135.0
+offset_top = 88.0
+offset_right = 135.32
+offset_bottom = 88.24
