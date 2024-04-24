@@ -1,9 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://nsxlg1300kdl"]
+[gd_scene load_steps=6 format=3 uid="uid://nsxlg1300kdl"]
 
 [ext_resource type="PackedScene" uid="uid://dpin0rlv2nj4q" path="res://scenes/evidence_list.tscn" id="1_ib3lq"]
+[ext_resource type="Script" path="res://scenes/NoNotesBox.gd" id="2_iope6"]
+[ext_resource type="FontFile" uid="uid://b20ensnf302nl" path="res://fonts/Cat Comic.ttf" id="2_xd6mc"]
+[ext_resource type="Script" path="res://scenes/DescriptionBox.gd" id="4_5m0ve"]
+[ext_resource type="Script" path="res://scenes/DescriptionLabel.gd" id="5_0nqay"]
 
 [node name="EvidenceMenu" type="Control"]
 clip_contents = true
+custom_minimum_size = Vector2(968, 546)
 layout_mode = 3
 anchor_right = 0.756
 anchor_bottom = 0.758
@@ -16,7 +21,7 @@ grow_vertical = 2
 layout_mode = 0
 offset_right = 968.0
 offset_bottom = 546.0
-color = Color(0.639216, 0.2, 1, 1)
+color = Color(0.670588, 0.866667, 0.815686, 1)
 
 [node name="ScrollContainer" type="ScrollContainer" parent="."]
 custom_minimum_size = Vector2(420, 518)
@@ -29,3 +34,45 @@ horizontal_scroll_mode = 0
 
 [node name="EvidenceList" parent="ScrollContainer" instance=ExtResource("1_ib3lq")]
 layout_mode = 2
+
+[node name="NoNotesBox" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 198.0
+offset_right = 938.0
+offset_bottom = 348.0
+color = Color(0, 0, 0, 0.580392)
+script = ExtResource("2_iope6")
+
+[node name="NoNotesLabel" type="Label" parent="NoNotesBox"]
+layout_mode = 0
+offset_left = -30.0
+offset_top = -198.0
+offset_right = 938.0
+offset_bottom = 348.0
+theme_override_fonts/font = ExtResource("2_xd6mc")
+theme_override_font_sizes/font_size = 80
+text = "No Notes Yet"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DescriptionBox" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 448.0
+offset_top = 109.0
+offset_right = 958.0
+offset_bottom = 453.0
+color = Color(0, 0, 0, 0.580392)
+script = ExtResource("4_5m0ve")
+
+[node name="DescriptionLabel" type="Label" parent="DescriptionBox"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 500.0
+offset_bottom = 334.0
+theme_override_fonts/font = ExtResource("2_xd6mc")
+theme_override_font_sizes/font_size = 30
+text = "Description Here"
+autowrap_mode = 3
+script = ExtResource("5_0nqay")

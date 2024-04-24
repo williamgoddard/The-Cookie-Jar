@@ -1,7 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://bqqd84fvflucc"]
+[gd_scene load_steps=7 format=3 uid="uid://bqqd84fvflucc"]
 
 [ext_resource type="PackedScene" uid="uid://duonupy85wi33" path="res://scenes/menu_background.tscn" id="1_5868n"]
+[ext_resource type="Script" path="res://scenes/full_evidence_menu.gd" id="1_wsxn4"]
 [ext_resource type="PackedScene" uid="uid://nsxlg1300kdl" path="res://scenes/evidence_menu.tscn" id="2_5ir8a"]
+[ext_resource type="Texture2D" uid="uid://yac8xcu0qidv" path="res://sprites/interface/back_button.png" id="4_y040f"]
+[ext_resource type="Texture2D" uid="uid://42mtve083024" path="res://sprites/interface/back_button_hover.png" id="5_bi4y3"]
+[ext_resource type="Script" path="res://scripts/ControlButton.gd" id="6_hkd82"]
 
 [node name="FullEvidenceMenu" type="Control"]
 layout_mode = 3
@@ -10,13 +14,31 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_wsxn4")
 
 [node name="MenuBackground" parent="." instance=ExtResource("1_5868n")]
 layout_mode = 1
 
 [node name="EvidenceMenu" parent="." instance=ExtResource("2_5ir8a")]
-layout_mode = 1
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
 offset_left = 135.0
 offset_top = 88.0
-offset_right = 135.32
-offset_bottom = 88.24
+offset_right = 1103.0
+offset_bottom = 634.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="BackButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 1008.0
+offset_top = 79.0
+offset_right = 1108.0
+offset_bottom = 179.0
+texture_normal = ExtResource("4_y040f")
+texture_hover = ExtResource("5_bi4y3")
+script = ExtResource("6_hkd82")
+
+[connection signal="pressed" from="BackButton" to="." method="close_menu"]

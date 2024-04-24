@@ -13,7 +13,7 @@
 "display_name": "Clara",
 "mirror": false,
 "nicknames": [""],
-"offset": Vector2(0, 0),
+"offset": Vector2(240, 0),
 "portraits": {
 "Default": {
 "export_overrides": {

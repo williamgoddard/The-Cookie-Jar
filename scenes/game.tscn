@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://ca54mo41y84f0"]
+[gd_scene load_steps=5 format=3 uid="uid://ca54mo41y84f0"]
 
 [ext_resource type="Script" path="res://scripts/Game.gd" id="1_eh7b0"]
 [ext_resource type="Script" path="res://scripts/RoomBackground.gd" id="2_u601v"]
 [ext_resource type="PackedScene" uid="uid://bse734xak2hog" path="res://scenes/control_button_bar.tscn" id="2_wys2x"]
+[ext_resource type="PackedScene" uid="uid://bqqd84fvflucc" path="res://scenes/full_evidence_menu.tscn" id="4_14lbh"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_eh7b0")
@@ -12,3 +13,20 @@ position = Vector2(640, 360)
 script = ExtResource("2_u601v")
 
 [node name="ControlButtonBar" parent="." instance=ExtResource("2_wys2x")]
+
+[node name="FullEvidenceMenu" parent="." instance=ExtResource("4_14lbh")]
+visible = false
+
+[node name="DescriptionBox" parent="FullEvidenceMenu/EvidenceMenu" index="3"]
+offset_bottom = 433.0
+
+[node name="DescriptionLabel" parent="FullEvidenceMenu/EvidenceMenu/DescriptionBox" index="0"]
+offset_bottom = 314.0
+
+[connection signal="pressed" from="ControlButtonBar/NotesButton" to="FullEvidenceMenu" method="open_menu"]
+[connection signal="pressed" from="ControlButtonBar/NotesButton" to="FullEvidenceMenu/EvidenceMenu/ScrollContainer/EvidenceList" method="reset_envidences"]
+[connection signal="pressed" from="FullEvidenceMenu/BackButton" to="FullEvidenceMenu/EvidenceMenu/DescriptionBox" method="make_hidden"]
+
+[editable path="ControlButtonBar"]
+[editable path="FullEvidenceMenu"]
+[editable path="FullEvidenceMenu/EvidenceMenu"]

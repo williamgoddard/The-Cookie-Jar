@@ -18,6 +18,8 @@ config/icon="res://icon.svg"
 [autoload]
 
 Global="*res://scripts/Global.gd"
+EvidenceTracker="*res://scripts/EvidenceTracker.gd"
+Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 [dialogic]
 
@@ -31,6 +33,7 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "intro": "res://dialogic/timelines/intro.dtl",
+"meet_abigail": "res://dialogic/timelines/meet_abigail.dtl",
 "move_button": "res://dialogic/timelines/move_button.dtl",
 "move_menu": "res://dialogic/timelines/move_menu.dtl"
 }
