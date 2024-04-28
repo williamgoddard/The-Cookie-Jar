@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://m7oaoqx75y47"]
+
+[ext_resource type="Script" path="res://scripts/LookSpot.gd" id="1_ncudc"]
+
+[node name="LookSpot" type="TextureButton"]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_ncudc")

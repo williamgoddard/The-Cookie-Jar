@@ -1,9 +1,9 @@
-Where should I go?
+[color=green]Where should I go?[/color]
 if {Global.current_room} == "jillian's room":
 	- Hallway
 		do Global.set_current_room("upstairs hallway")
 	- Bed
-		jillian: I can't go back to bed! I have work to do!
+		[color={Global.thought_colour}](I can't go back to bed! I have work to do!)[/color]
 elif {Global.current_room} == "lucas' room":
 	- Hallway
 		do Global.set_current_room("upstairs hallway")

@@ -1,7 +1,10 @@
 extends Node
 
-# Whether the user has pressed the move button for the first time yet
-var done_first_move_button : bool = false
+# Constants
+const thought_colour := "light_blue"
+
+var done_first_move_button := false
+var done_meet_abigail := false
 
 # The room the game is current in
 var current_room : String = "jillian's room"

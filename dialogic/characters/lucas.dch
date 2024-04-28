@@ -8,14 +8,14 @@
 "sound_moods": {},
 "style": ""
 },
-"default_portrait": "Lucas Default",
+"default_portrait": "Default",
 "description": "",
 "display_name": "Lucas",
 "mirror": false,
 "nicknames": [""],
 "offset": Vector2(0, 0),
 "portraits": {
-"Lucas Default": {
+"Default": {
 "export_overrides": {
 "image": "\"res://sprites/characters/lucas/Lucas Default.png\""
 },

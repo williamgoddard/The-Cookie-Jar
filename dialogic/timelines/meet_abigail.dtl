@@ -1,2 +1,53 @@
-join abigail 1
-abigail (Sad): ... *sigh*...
+[color={Global.thought_colour}](So, this is the upstairs hallway. Yep, it looks exactly how I left it.)[/color]
+[color={Global.thought_colour}](Except...)[/color]
+join abigail (Sad) 2
+[color={Global.thought_colour}](Aha! It's Abigail!)[/color]
+[color={Global.thought_colour}](She's standing just outside the bathroom door. I wonder what she's doing.)[/color]
+abigail: ... *sigh*
+[color={Global.thought_colour}](Hmm... Something's clearly not right here. I should investigate!)[/color]
+update abigail 3
+join jillian 1
+jillian: Good morning, Abigail! How are you doing today?
+abigail: My life is a swirling vortex of despair... I am enveloped in a deep, unyielding torment from which I cannot escape...
+jillian: Wow, it sounds like you're in a better mood than usual today! What's going on?
+abigail: ... I have been abandoned by fate, left to suffer... so close and yet so far from my only hope of relief...
+[color={Global.thought_colour}](Hmm... cryptic. But, as a future world-famous detective, decrypting crypticisms is my specialty!)[/color]
+[color={Global.thought_colour}](I should be able to work this out. What exactly has left Abigail in her perpetual state of suffering today?)[/color]
+- She didn't get enough sleep
+	jillian: Did you not get enough sleep last night?
+	abigail: ...
+	abigail: W-what... no! No, I got plenty of sleep last night!
+	jillian: Hmm... are you sure? Because, now that I mention it, you do look a little tired today...
+	abigail: N-no, this is just how I always look! You're just imagining things!
+	[color={Global.thought_colour}](Well, I suppose I can't argue with that logic. She's definitely acting very suspicious, though. Maybe I'll investigate this later.)[/color]
+	abigail: I've been waiting to use the bathroom.
+	[color={Global.thought_colour}](Ack! I guess I was wrong. Oh well, even future world-famous detectives make mistakes.)[/color]
+- She needs the bathroom
+	jillian: Are you waiting to use the bathroom?
+	abigail: ... That's right.
+	[color={Global.thought_colour}](Yes! I love making correct deductions! World-fame, here I come!)[/color]
+- She has headlice
+	jillian: Do you... have headlice?
+	abigail: ...
+	jillian: ...
+	abigail: ... What? No.
+	jillian: Are you sure? I can check for you, if you want! Nothing can hide from my magnifying glass!
+	abigail: No, I don't have headlice!
+	abigail: I've been waiting to use the bathroom.
+	[color={Global.thought_colour}](Ack! I guess I was wrong. Oh well, even future world-famous detectives make mistakes.)[/color]
+jillian: How long have you been waiting for?
+abigail: At least... an hour.
+jillian: Huh? Someone's been in the bathroom for over an hour? Do you know who it is?
+abigail: ... If I did, I wouldn't be waiting here.
+jillian: You wouldn't? What do you mean by that?
+abigail: Of course... I would be enacting my revenge.
+[color={Global.thought_colour}](Wow, she sounds pretty serious! I have to remember never to get on Abigail's bad side.)[/color]
+jillian: Have you tried knocking?
+abigail: ... Yes, but nobody answered. Whoever it is, I think they're trying to hide from me.
+abigail: But, I won't let them escape. I can wait here until they show themselves, or they slowly die of starvation. Either way... is fine by me.
+[color={Global.thought_colour}](A stakeout! Ignoring how she phrased it, that's a good plan to catch the culprit.)[/color]
+[color={Global.thought_colour}](Admittedly, I'm also curious about who's taking so long in there. Maybe I could investigate a little and figure it out. I've got some time before classes start!)[/color]
+jillian: Hmm... I think I can help you out. I'll go and check on everyone else, and see if I can work out who's in there.
+abigail: ... Tell me when you know who it is... I'll be waiting here.
+[color={Global.thought_colour}](Looks like I've got a case! In order to figure out who's in the bathroom, I should start by finding out where everyone else is.)[/color]
+[color={Global.thought_colour}](Other than Abigail, I've got 4 other housemates: Lucas, Jimothy, Clara and Ben. I think I hear some of them talking downstairs, so that's where I should check first!)[/color]

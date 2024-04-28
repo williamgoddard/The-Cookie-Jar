@@ -1,3 +1,2 @@
-jillian: Oh, right! That's the [color=red]\[Move][/color] button! Now, I just need to choose where I want to go.
-jillian: An elementary decision. My room only has one door, after all.
+[color={Global.thought_colour}](Oh, right! That's the [color=red]\[Move][/color] button! Now, I just need to choose where I want to go.)[color={Global.thought_colour}]
 jump move_menu/

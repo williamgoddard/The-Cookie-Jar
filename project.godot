@@ -20,6 +20,8 @@ config/icon="res://icon.svg"
 Global="*res://scripts/Global.gd"
 EvidenceTracker="*res://scripts/EvidenceTracker.gd"
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
+EventChecker="*res://scripts/EventChecker.gd"
+LookManager="*res://scripts/LookManager.gd"
 
 [dialogic]
 
@@ -29,13 +31,15 @@ directories/dch_directory={
 "clara": "res://dialogic/characters/clara.dch",
 "jillian": "res://dialogic/characters/jillian.dch",
 "jimothy": "res://dialogic/characters/jimothy.dch",
-"theo": "res://dialogic/characters/theo.dch"
+"lucas": "res://dialogic/characters/lucas.dch"
 }
 directories/dtl_directory={
 "intro": "res://dialogic/timelines/intro.dtl",
+"look_fallback": "res://dialogic/timelines/look_fallback.dtl",
 "meet_abigail": "res://dialogic/timelines/meet_abigail.dtl",
 "move_button": "res://dialogic/timelines/move_button.dtl",
-"move_menu": "res://dialogic/timelines/move_menu.dtl"
+"move_menu": "res://dialogic/timelines/move_menu.dtl",
+"take_magnifying_glass": "res://dialogic/timelines/take_magnifying_glass.dtl"
 }
 glossary/default_case_sensitive=true
 layout/style_list=["res://dialogic/styles/VisualNovelDefaultStyle.tres"]
@@ -67,6 +71,8 @@ window/size/viewport_height=720
 window/size/resizable=false
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
+mouse_cursor/custom_image="res://sprites/interface/pointer.png"
+mouse_cursor/custom_image_hotspot=Vector2(2, 2)
 
 [editor_plugins]
 
