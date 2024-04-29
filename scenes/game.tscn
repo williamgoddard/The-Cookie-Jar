@@ -1,12 +1,20 @@
-[gd_scene load_steps=5 format=3 uid="uid://ca54mo41y84f0"]
+[gd_scene load_steps=9 format=3 uid="uid://ca54mo41y84f0"]
 
 [ext_resource type="Script" path="res://scripts/Game.gd" id="1_eh7b0"]
+[ext_resource type="PackedScene" uid="uid://bftghhoxkhvm" path="res://scenes/look_spot_manager.tscn" id="2_mjfdx"]
 [ext_resource type="Script" path="res://scripts/RoomBackground.gd" id="2_u601v"]
 [ext_resource type="PackedScene" uid="uid://bse734xak2hog" path="res://scenes/control_button_bar.tscn" id="2_wys2x"]
 [ext_resource type="PackedScene" uid="uid://bqqd84fvflucc" path="res://scenes/full_evidence_menu.tscn" id="4_14lbh"]
+[ext_resource type="Texture2D" uid="uid://yac8xcu0qidv" path="res://sprites/interface/back_button.png" id="6_fy65k"]
+[ext_resource type="Texture2D" uid="uid://42mtve083024" path="res://sprites/interface/back_button_hover.png" id="7_41ix1"]
+[ext_resource type="Script" path="res://scripts/LookBackButton.gd" id="8_xqhkv"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_eh7b0")
+
+[node name="LookSpotManager" parent="." instance=ExtResource("2_mjfdx")]
+offset_right = 1280.0
+offset_bottom = 720.0
 
 [node name="RoomBackground" type="Sprite2D" parent="."]
 position = Vector2(640, 360)
@@ -23,9 +31,23 @@ offset_bottom = 433.0
 [node name="DescriptionLabel" parent="FullEvidenceMenu/EvidenceMenu/DescriptionBox" index="0"]
 offset_bottom = 314.0
 
+[node name="BackButton" type="TextureButton" parent="."]
+visible = false
+offset_left = 1184.0
+offset_top = -8.0
+offset_right = 1284.0
+offset_bottom = 92.0
+texture_normal = ExtResource("6_fy65k")
+texture_hover = ExtResource("7_41ix1")
+script = ExtResource("8_xqhkv")
+
+[connection signal="pressed" from="ControlButtonBar/LookButton" to="LookSpotManager" method="create_look_spots"]
+[connection signal="pressed" from="ControlButtonBar/LookButton" to="ControlButtonBar" method="hide"]
+[connection signal="pressed" from="ControlButtonBar/LookButton" to="BackButton" method="show"]
 [connection signal="pressed" from="ControlButtonBar/NotesButton" to="FullEvidenceMenu" method="open_menu"]
 [connection signal="pressed" from="ControlButtonBar/NotesButton" to="FullEvidenceMenu/EvidenceMenu/ScrollContainer/EvidenceList" method="reset_envidences"]
 [connection signal="pressed" from="FullEvidenceMenu/BackButton" to="FullEvidenceMenu/EvidenceMenu/DescriptionBox" method="make_hidden"]
+[connection signal="pressed" from="BackButton" to="ControlButtonBar" method="show"]
 
 [editable path="ControlButtonBar"]
 [editable path="FullEvidenceMenu"]

@@ -1,2 +1,6 @@
-[color={Global.thought_colour}](Oh, right! That's the [color=red]\[Move][/color] button! Now, I just need to choose where I want to go.)[color={Global.thought_colour}]
-jump move_menu/
+if {Global.taken_magnifying_glass} == true:
+	[color={Global.thought_colour}](Oh, right! That's the [/color][color=red]\[Move][/color][color={Global.thought_colour}] button! Now, I just need to choose where I want to go.)[/color]
+	set {Global.done_first_move_button} = true
+	jump move_menu/
+else:
+	[color={Global.thought_colour}](I can't leave yet! I need to find my magnifying glass first!)[/color]

@@ -4,9 +4,7 @@ func _ready():
 	var click_mask := BitMap.new()
 	click_mask.create_from_image_alpha(texture_normal.get_image())
 	texture_click_mask = click_mask
+	Dialogic.timeline_started.connect(hide)
 
 func _pressed():
-	if not Global.done_first_move_button:
-		Dialogic.start("move_button")
-	else:
-		Dialogic.start("move_menu")
+	hide()
