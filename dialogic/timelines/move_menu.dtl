@@ -7,7 +7,7 @@ if {Global.current_room} == "jillian's room":
 elif {Global.current_room} == "lucas' room":
 	- Hallway
 		do Global.set_current_room("upstairs hallway")
-elif {Global.current_room} == "clara's room":
+elif {Global.current_room} == "banjamin's room":
 	- Hallway
 		do Global.set_current_room("upstairs hallway")
 elif {Global.current_room} == "jimothy's room":
@@ -21,8 +21,8 @@ elif {Global.current_room} == "upstairs hallway":
 		do Global.set_current_room("jillian's room")
 	- Lucas' Room
 		do Global.set_current_room("lucas' room")
-	- Clara's Room
-		do Global.set_current_room("clara's room")
+	- Benjamin's Room
+		do Global.set_current_room("benjamin's room")
 	- Jimothy's Room
 		do Global.set_current_room("jimothy's room")
 	- Bathroom
@@ -32,8 +32,8 @@ elif {Global.current_room} == "upstairs hallway":
 elif {Global.current_room} == "downstairs hallway":
 	- Abigail's Room
 		do Global.set_current_room("abigail's room")
-	- Benjamin's Room
-		do Global.set_current_room("benjamin's room")
+	- Clara's Room
+		do Global.set_current_room("clara's room")
 	- Kitchen
 		do Global.set_current_room("kitchen")
 	- Living Room
@@ -45,7 +45,7 @@ elif {Global.current_room} == "downstairs hallway":
 elif {Global.current_room} == "abigail's room":
 	- Hallway
 		do Global.set_current_room("downstairs hallway")
-elif {Global.current_room} == "benjamin's room":
+elif {Global.current_room} == "clara's room":
 	- Hallway
 		do Global.set_current_room("downstairs hallway")
 elif {Global.current_room} == "living room":

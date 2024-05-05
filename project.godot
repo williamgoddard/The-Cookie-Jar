@@ -36,7 +36,14 @@ directories/dch_directory={
 directories/dtl_directory={
 "intro": "res://dialogic/timelines/intro.dtl",
 "look_fallback": "res://dialogic/timelines/look_fallback.dtl",
+"look_jillian_bed": "res://dialogic/timelines/look_jillian_bed.dtl",
+"look_jillian_books": "res://dialogic/timelines/look_jillian_books.dtl",
+"look_jillian_lampshade": "res://dialogic/timelines/look_jillian_lampshade.dtl",
+"look_jillian_laptop": "res://dialogic/timelines/look_jillian_laptop.dtl",
+"look_jillian_laundry_basket": "res://dialogic/timelines/look_jillian_laundry_basket.dtl",
 "meet_abigail": "res://dialogic/timelines/meet_abigail.dtl",
+"meet_jimothy": "res://dialogic/timelines/meet_jimothy.dtl",
+"meet_lucas": "res://dialogic/timelines/meet_lucas.dtl",
 "move_button": "res://dialogic/timelines/move_button.dtl",
 "move_menu": "res://dialogic/timelines/move_menu.dtl",
 "take_magnifying_glass": "res://dialogic/timelines/take_magnifying_glass.dtl"
@@ -54,7 +61,7 @@ animations/join_default_length=0.5
 animations/leave_default_length=0.5
 animations/leave_default_wait=true
 animations/join_default_wait=true
-choices/autofocus_first=true
+choices/autofocus_first=false
 choices/delay=0.2
 choices/reveal_delay=0
 choices/reveal_by_input=false
@@ -63,6 +70,11 @@ save/encryption_on_exports_only=true
 layout/end_behaviour=0
 text/autopauses={}
 text/autocolor_names=true
+history/full_history_enabled=false
+history/simple_history_enabled=true
+text/autoadvance_fixed_delay=1.0
+text/autoadvance_enabled=false
+text/autoadvance_per_word_delay=0
 
 [display]
 

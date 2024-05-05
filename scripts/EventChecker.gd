@@ -9,3 +9,7 @@ func check_for_events():
 			if not Global.done_meet_abigail:
 				Dialogic.start('meet_abigail')
 				Global.done_meet_abigail = true
+		'downstairs hallway':
+			if not Global.done_meet_jimothy:
+				Dialogic.start('meet_jimothy')
+				Global.done_meet_jimothy = true

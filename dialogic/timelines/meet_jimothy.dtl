@@ -1,0 +1,27 @@
+As soon as I went downstairs, I bumped into someone else as they came stomping out of the kitchen.
+join jillian 1
+join jimothy 3
+jillian: Oh, good morning Jimothy!
+jimothy: Good morning? Incorrect. There is nothing good about this morning.
+[color={Global.thought_colour}](Ack! How could I have made such a hasty assumption? I need to be more careful. Now I just look silly!)[/color]
+jillian: Of course, you're right. This morning is terrible. But, why do you suppose that is?
+jimothy: Why? Why!? I have been accused of tomfoolery! Horseplay! Shenanigans! And, by that dim-witted, half-brained lazy nincompoop, nonetheless!
+[color={Global.thought_colour}](He's probably talking about Lucas. Those two have a pretty intense rivalry.)[/color]
+jimothy: And for what purpose? Why would I want to steal one of his childish toys? The very thought of it is ludicrous! Preposterous! Outrageous!
+jillian: Hmm... So, Lucas thinks you took something that belongs to him?
+jimothy: Correct. However, I am of course innocent. The very idea that I, Jimothy Jenkins Jr. would partake in such trivial pranks is an insult to not just me, but to my entire lineage!
+jillian: That's a good point. You come from a very prestigious family. I can't imagine you would need to steal anything.
+jillian: But, then why does Lucas think you did? And, what does he think you stole, for that matter?
+jimothy: Hmph. I couldn't begin to imagine the imbecilic thought patterns of that feeble-minded fool. Why don't you ask him yourself?
+jillian: Yes, that's a good idea. Alright, I'll speak to him about it then!
+Jimothy looks down at his watch, and then tuts to himself under his breath.
+jimothy: Now, if you'll excuse me, I have an important test tomorrow for which I must study, and I'm already six minutes and twenty-four seconds behind schedule. I cannot afford to waste any more time with pointless chit-chat.
+jillian: Oh, alright then! Good luck on your test, Jimothy!
+jimothy: Heh, good luck? I don't need luck. I have an IQ of 137.
+jillian: Well, that's good to hear! See you later then.
+leave jimothy
+Without saying another word, Jimothy passes me, and heads upstairs.
+update jillian 2
+[color={Global.thought_colour}](Hmm... So, Lucas thinks Jimothy stole something from him, but Jimothy says he's innocent. That makes this... another case!)[/color]
+[color={Global.thought_colour}](That's two different cases in one day! I wonder if it's a coincidence...)[/color]
+[color={Global.thought_colour}](Either way, I should find Lucas. I need to hear his side of the story.)[/color]

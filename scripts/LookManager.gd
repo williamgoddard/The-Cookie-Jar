@@ -60,5 +60,15 @@ func look_spot(key : String):
 	match key:
 		"magnifying glass":
 			Dialogic.start("take_magnifying_glass")
+		"jillian bed":
+			Dialogic.start("look_jillian_bed")
+		"jillian books":
+			Dialogic.start("look_jillian_books")
+		"jillian lampshade":
+			Dialogic.start("look_jillian_lampshade")
+		"jillian laptop":
+			Dialogic.start("look_jillian_laptop")
+		"jillian laundry basket":
+			Dialogic.start("look_jillian_laundry_basket")
 		_:
 			Dialogic.start("look_fallback")

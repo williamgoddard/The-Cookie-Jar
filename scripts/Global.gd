@@ -6,6 +6,7 @@ const thought_colour := "light_blue"
 var taken_magnifying_glass := false
 var done_first_move_button := false
 var done_meet_abigail := false
+var done_meet_jimothy := false
 
 var background_textures = {
 	"jillian's room": "res://sprites/background/jillian_bedroom.png",
@@ -34,6 +35,11 @@ func take_magnifying_glass():
 	taken_magnifying_glass = true
 	background_textures["jillian's room"] = "res://sprites/background/jillian_bedroom_2.png"
 	LookManager.look_spots["jillian's room"].erase("magnifying glass")
+	LookManager.look_spots["jillian's room"]["jillian bed"] = "res://sprites/look_spots/bed.png"
+	LookManager.look_spots["jillian's room"]["jillian books"] = "res://sprites/look_spots/books.png"
+	LookManager.look_spots["jillian's room"]["jillian lampshade"] = "res://sprites/look_spots/lampshade.png"
+	LookManager.look_spots["jillian's room"]["jillian laptop"] = "res://sprites/look_spots/laptop.png"
+	LookManager.look_spots["jillian's room"]["jillian laundry basket"] = "res://sprites/look_spots/laundry_basket.png"
 	set_current_room("jillian's room")
 
 func _ready():

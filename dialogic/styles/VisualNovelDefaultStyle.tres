@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="DialogicStyle" load_steps=13 format=3 uid="uid://b4ssgxidnvdgn"]
+[gd_resource type="Resource" script_class="DialogicStyle" load_steps=15 format=3 uid="uid://b4ssgxidnvdgn"]
 
 [ext_resource type="PackedScene" uid="uid://c1k5m0w3r40xf" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/full_background_layer.tscn" id="1_qsbfd"]
 [ext_resource type="Script" path="res://addons/dialogic/Resources/dialogic_style_layer.gd" id="2_get5n"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://bquja8jyk8kbr" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Textbox/vn_textbox_layer.tscn" id="4_75v2m"]
 [ext_resource type="PackedScene" uid="uid://cn674foxwedqu" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn" id="5_acfo6"]
 [ext_resource type="PackedScene" uid="uid://dhk6j6eb6e3q" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Choices/vn_choice_layer.tscn" id="7_r5pby"]
+[ext_resource type="PackedScene" uid="uid://cmlr1yg78lrl0" path="res://dialogic/styles/OverlayHistory/custom_history_layer.tscn" id="7_x0vsp"]
 [ext_resource type="Script" path="res://addons/dialogic/Resources/dialogic_style.gd" id="10_gml53"]
 
 [sub_resource type="Resource" id="Resource_0pu5x"]
@@ -23,7 +24,9 @@ script = ExtResource("2_get5n")
 scene = ExtResource("4_75v2m")
 overrides = {
 "box_size": "Vector2(1000, 154)",
-"name_label_box_offset": "Vector2(10, -5)"
+"name_label_box_offset": "Vector2(10, -5)",
+"next_indicator_size": "Vector2(40, 40)",
+"next_indicator_texture": "\"res://sprites/interface/text_next_icon.png\""
 }
 
 [sub_resource type="Resource" id="Resource_t0fp4"]
@@ -38,6 +41,14 @@ overrides = {
 "font_size_custom": "45.0"
 }
 
+[sub_resource type="Resource" id="Resource_t0nx8"]
+script = ExtResource("2_get5n")
+scene = ExtResource("7_x0vsp")
+overrides = {
+"font_custom_size": "23.0",
+"font_use_global_size": "false"
+}
+
 [resource]
 script = ExtResource("10_gml53")
 name = "VisualNovelDefaultStyle"
@@ -45,5 +56,5 @@ base_overrides = {
 "global_font": "\"res://fonts/Cat Comic.ttf\"",
 "global_font_size": "30.0"
 }
-layers = Array[ExtResource("2_get5n")]([SubResource("Resource_0pu5x"), SubResource("Resource_mnxh2"), SubResource("Resource_cx7ec"), SubResource("Resource_t0fp4"), SubResource("Resource_ps2pl")])
-metadata/_latest_layer = -1
+layers = Array[ExtResource("2_get5n")]([SubResource("Resource_0pu5x"), SubResource("Resource_mnxh2"), SubResource("Resource_cx7ec"), SubResource("Resource_t0fp4"), SubResource("Resource_ps2pl"), SubResource("Resource_t0nx8")])
+metadata/_latest_layer = 5
