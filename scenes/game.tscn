@@ -1,10 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://ca54mo41y84f0"]
+[gd_scene load_steps=10 format=3 uid="uid://ca54mo41y84f0"]
 
 [ext_resource type="Script" path="res://scripts/Game.gd" id="1_eh7b0"]
 [ext_resource type="PackedScene" uid="uid://bftghhoxkhvm" path="res://scenes/look_spot_manager.tscn" id="2_mjfdx"]
 [ext_resource type="Script" path="res://scripts/RoomBackground.gd" id="2_u601v"]
 [ext_resource type="PackedScene" uid="uid://bse734xak2hog" path="res://scenes/control_button_bar.tscn" id="2_wys2x"]
 [ext_resource type="PackedScene" uid="uid://bqqd84fvflucc" path="res://scenes/full_evidence_menu.tscn" id="4_14lbh"]
+[ext_resource type="Script" path="res://scripts/FullscreenEvidenceLooker.gd" id="6_8ucg8"]
 [ext_resource type="Texture2D" uid="uid://yac8xcu0qidv" path="res://sprites/interface/back_button.png" id="6_fy65k"]
 [ext_resource type="Texture2D" uid="uid://42mtve083024" path="res://sprites/interface/back_button_hover.png" id="7_41ix1"]
 [ext_resource type="Script" path="res://scripts/LookBackButton.gd" id="8_xqhkv"]
@@ -22,14 +23,32 @@ script = ExtResource("2_u601v")
 
 [node name="ControlButtonBar" parent="." instance=ExtResource("2_wys2x")]
 
+[node name="Label" parent="ControlButtonBar/LookButton" index="0"]
+layout_mode = 0
+offset_top = 0.0
+offset_bottom = 70.0
+
+[node name="Label" parent="ControlButtonBar/TalkButton" index="0"]
+layout_mode = 0
+offset_top = 0.0
+offset_bottom = 70.0
+
+[node name="Label" parent="ControlButtonBar/MoveButton" index="0"]
+layout_mode = 0
+offset_top = 0.0
+offset_bottom = 70.0
+
+[node name="Label" parent="ControlButtonBar/NotesButton" index="0"]
+layout_mode = 0
+offset_top = 0.0
+offset_bottom = 70.0
+
 [node name="FullEvidenceMenu" parent="." instance=ExtResource("4_14lbh")]
 visible = false
 
-[node name="DescriptionBox" parent="FullEvidenceMenu/EvidenceMenu" index="3"]
-offset_bottom = 433.0
-
-[node name="DescriptionLabel" parent="FullEvidenceMenu/EvidenceMenu/DescriptionBox" index="0"]
-offset_bottom = 314.0
+[node name="FullscreenEvidenceLooker" parent="FullEvidenceMenu" index="2"]
+mouse_filter = 0
+script = ExtResource("6_8ucg8")
 
 [node name="BackButton" type="TextureButton" parent="."]
 visible = false
@@ -46,6 +65,8 @@ script = ExtResource("8_xqhkv")
 [connection signal="pressed" from="ControlButtonBar/LookButton" to="BackButton" method="show"]
 [connection signal="pressed" from="ControlButtonBar/NotesButton" to="FullEvidenceMenu" method="open_menu"]
 [connection signal="pressed" from="ControlButtonBar/NotesButton" to="FullEvidenceMenu/EvidenceMenu/ScrollContainer/EvidenceList" method="reset_envidences"]
+[connection signal="pressed" from="ControlButtonBar/NotesButton" to="FullEvidenceMenu/EvidenceMenu/NoNotesBox" method="calculate_if_shown"]
+[connection signal="pressed" from="FullEvidenceMenu/EvidenceMenu/ExamineButton" to="FullEvidenceMenu/FullscreenEvidenceLooker" method="set_picture"]
 [connection signal="pressed" from="FullEvidenceMenu/BackButton" to="FullEvidenceMenu/EvidenceMenu/DescriptionBox" method="make_hidden"]
 [connection signal="pressed" from="BackButton" to="ControlButtonBar" method="show"]
 

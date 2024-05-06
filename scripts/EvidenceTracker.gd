@@ -2,10 +2,11 @@ extends Node
 
 var evidence_data = {
 	
-	"11037": {
-		"name": "11037",
-		"icon": "res://sprites/interface/evidence icons/11037.png",
-		"description": "It's a very suspicious number"
+	"map": {
+		"name": "House Layout",
+		"icon": "res://sprites/interface/evidence icons/map.png",
+		"description": "It's a map showing the layout of the house. You never know when a map might come in handy when it comes to solving a mystery!",
+		"examine": "res://sprites/interface/Evidence Popups/Map.png"
 	}
 	
 }

@@ -31,16 +31,27 @@ directories/dch_directory={
 "clara": "res://dialogic/characters/clara.dch",
 "jillian": "res://dialogic/characters/jillian.dch",
 "jimothy": "res://dialogic/characters/jimothy.dch",
-"lucas": "res://dialogic/characters/lucas.dch"
+"lucas": "res://dialogic/characters/lucas.dch",
+"norbert": "res://dialogic/characters/norbert.dch"
 }
 directories/dtl_directory={
+"cant_move_take_map": "res://dialogic/timelines/cant_move_take_map.dtl",
 "intro": "res://dialogic/timelines/intro.dtl",
+"look-bathroom-door": "res://dialogic/timelines/look-bathroom-door.dtl",
+"look-benjamin-door": "res://dialogic/timelines/look-benjamin-door.dtl",
+"look-hallway-lightswitch": "res://dialogic/characters/look-hallway-lightswitch.dtl",
+"look-hallway-plant": "res://dialogic/timelines/look-hallway-plant.dtl",
+"look-jillian-door": "res://dialogic/timelines/look-jillian-door.dtl",
+"look-jimothy-painting": "res://sprites/background/look-jimothy-painting.dtl",
+"look-lucas-door": "res://dialogic/timelines/look-lucas-door.dtl",
+"look-map": "res://dialogic/timelines/look-map.dtl",
 "look_fallback": "res://dialogic/timelines/look_fallback.dtl",
 "look_jillian_bed": "res://dialogic/timelines/look_jillian_bed.dtl",
 "look_jillian_books": "res://dialogic/timelines/look_jillian_books.dtl",
 "look_jillian_lampshade": "res://dialogic/timelines/look_jillian_lampshade.dtl",
 "look_jillian_laptop": "res://dialogic/timelines/look_jillian_laptop.dtl",
 "look_jillian_laundry_basket": "res://dialogic/timelines/look_jillian_laundry_basket.dtl",
+"look_jimothy_door": "res://dialogic/timelines/look_jimothy_door.dtl",
 "meet_abigail": "res://dialogic/timelines/meet_abigail.dtl",
 "meet_jimothy": "res://dialogic/timelines/meet_jimothy.dtl",
 "meet_lucas": "res://dialogic/timelines/meet_lucas.dtl",
@@ -85,6 +96,7 @@ window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 mouse_cursor/custom_image="res://sprites/interface/pointer.png"
 mouse_cursor/custom_image_hotspot=Vector2(2, 2)
+mouse_cursor/size/mode=0
 
 [editor_plugins]
 

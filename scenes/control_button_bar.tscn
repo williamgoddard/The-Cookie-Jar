@@ -1,15 +1,11 @@
-[gd_scene load_steps=11 format=3 uid="uid://bse734xak2hog"]
+[gd_scene load_steps=7 format=3 uid="uid://bse734xak2hog"]
 
 [ext_resource type="Script" path="res://scripts/control_button_bar.gd" id="1_ux65a"]
 [ext_resource type="Texture2D" uid="uid://enhcmreyu7p3" path="res://sprites/interface/ActionBarButton.png" id="2_v51rw"]
 [ext_resource type="Texture2D" uid="uid://br8xpwerm26sp" path="res://sprites/interface/ActionBarButton_selected.png" id="3_ofkxf"]
 [ext_resource type="Script" path="res://scripts/ControlButton.gd" id="4_7ehcb"]
 [ext_resource type="FontFile" uid="uid://b20ensnf302nl" path="res://fonts/Cat Comic.ttf" id="5_dw4g6"]
-[ext_resource type="Texture2D" uid="uid://7qqa6nkc5awd" path="res://sprites/interface/button_look_inactive.png" id="6_rlevm"]
-[ext_resource type="Texture2D" uid="uid://cusoxbmojrwkk" path="res://sprites/interface/button_talk_inactive.png" id="9_bhwmy"]
-[ext_resource type="Texture2D" uid="uid://bkiscnry00ihn" path="res://sprites/interface/button_move_inactive.png" id="12_331vx"]
 [ext_resource type="Script" path="res://scripts/MoveButton.gd" id="14_22654"]
-[ext_resource type="Texture2D" uid="uid://c7txkynckhiua" path="res://sprites/interface/button_notes_inactive.png" id="15_2v4cf"]
 
 [node name="ControlButtonBar" type="Control"]
 layout_mode = 3
@@ -33,7 +29,7 @@ layout_mode = 0
 offset_top = 5.0
 offset_right = 192.0
 offset_bottom = 75.0
-theme_override_colors/font_shadow_color = Color(0.345098, 0.345098, 0.345098, 1)
+theme_override_colors/font_shadow_color = Color(0.344076, 0.344076, 0.344076, 1)
 theme_override_constants/shadow_offset_x = 4
 theme_override_constants/shadow_offset_y = 4
 theme_override_fonts/font = ExtResource("5_dw4g6")
@@ -50,14 +46,13 @@ offset_right = 508.0
 offset_bottom = 711.0
 texture_normal = ExtResource("2_v51rw")
 texture_hover = ExtResource("3_ofkxf")
-texture_disabled = ExtResource("6_rlevm")
 script = ExtResource("4_7ehcb")
 
 [node name="Label" type="Label" parent="LookButton"]
 offset_top = 5.0
 offset_right = 192.0
 offset_bottom = 75.0
-theme_override_colors/font_shadow_color = Color(0.345098, 0.345098, 0.345098, 1)
+theme_override_colors/font_shadow_color = Color(0.344076, 0.344076, 0.344076, 1)
 theme_override_constants/shadow_offset_x = 4
 theme_override_constants/shadow_offset_y = 4
 theme_override_fonts/font = ExtResource("5_dw4g6")
@@ -74,14 +69,13 @@ offset_right = 704.0
 offset_bottom = 711.0
 texture_normal = ExtResource("2_v51rw")
 texture_hover = ExtResource("3_ofkxf")
-texture_disabled = ExtResource("9_bhwmy")
 script = ExtResource("4_7ehcb")
 
 [node name="Label" type="Label" parent="TalkButton"]
 offset_top = 5.0
 offset_right = 192.0
 offset_bottom = 75.0
-theme_override_colors/font_shadow_color = Color(0.345098, 0.345098, 0.345098, 1)
+theme_override_colors/font_shadow_color = Color(0.344076, 0.344076, 0.344076, 1)
 theme_override_constants/shadow_offset_x = 4
 theme_override_constants/shadow_offset_y = 4
 theme_override_fonts/font = ExtResource("5_dw4g6")
@@ -98,14 +92,13 @@ offset_right = 900.0
 offset_bottom = 711.0
 texture_normal = ExtResource("2_v51rw")
 texture_hover = ExtResource("3_ofkxf")
-texture_disabled = ExtResource("12_331vx")
 script = ExtResource("14_22654")
 
 [node name="Label" type="Label" parent="MoveButton"]
 offset_top = 5.0
 offset_right = 192.0
 offset_bottom = 75.0
-theme_override_colors/font_shadow_color = Color(0.345098, 0.345098, 0.345098, 1)
+theme_override_colors/font_shadow_color = Color(0.344076, 0.344076, 0.344076, 1)
 theme_override_constants/shadow_offset_x = 4
 theme_override_constants/shadow_offset_y = 4
 theme_override_fonts/font = ExtResource("5_dw4g6")
@@ -122,14 +115,13 @@ offset_right = 1096.0
 offset_bottom = 711.0
 texture_normal = ExtResource("2_v51rw")
 texture_hover = ExtResource("3_ofkxf")
-texture_disabled = ExtResource("15_2v4cf")
 script = ExtResource("4_7ehcb")
 
 [node name="Label" type="Label" parent="NotesButton"]
 offset_top = 5.0
 offset_right = 192.0
 offset_bottom = 75.0
-theme_override_colors/font_shadow_color = Color(0.345098, 0.345098, 0.345098, 1)
+theme_override_colors/font_shadow_color = Color(0.344076, 0.344076, 0.344076, 1)
 theme_override_constants/shadow_offset_x = 4
 theme_override_constants/shadow_offset_y = 4
 theme_override_fonts/font = ExtResource("5_dw4g6")

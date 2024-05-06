@@ -1,6 +1,6 @@
 jillian: Aha! There's my magnifying glass! Now I'm ready to go!
 do Global.take_magnifying_glass()
-[color=green]The Magnifying Glass was picked up.[/color]
+[color=green]Jillian took the Mangnifying Glass.[/color]
 [color={Global.thought_colour}](I wonder what my housemates are up to. I'm sure they must all be awake by now.)[/color]
 [color={Global.thought_colour}](To leave my bedroom, I should use the [/color][color=red]\[Move][/color][color={Global.thought_colour}] button.)[/color]
 [color={Global.thought_colour}](... Huh? What's a [/color][color=red]\[Move][/color][color={Global.thought_colour}] button?)[/color]

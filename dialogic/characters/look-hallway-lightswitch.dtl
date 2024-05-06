@@ -1,0 +1,8 @@
+[color={Global.thought_colour}](It's the lightswitch.)[/color]
+[color={Global.thought_colour}](Wait... Maybe if I turn the lights off, it will reveal a clue!)[/color]
+[background arg="res://sprites/background/black.png" fade="0.0"]
+I flicked the lightswitch off.
+[color={Global.thought_colour}](...)[/color]
+[color={Global.thought_colour}](Well, that's disappointing.)[/color]
+[background fade="0.0"]
+I flicked the lightswitch back on.

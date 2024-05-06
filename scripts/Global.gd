@@ -6,7 +6,11 @@ const thought_colour := "light_blue"
 var taken_magnifying_glass := false
 var done_first_move_button := false
 var done_meet_abigail := false
+var taken_map := false
 var done_meet_jimothy := false
+var bedrooms_open := false
+var bathroom_open := false
+var basement_open := false
 
 var background_textures = {
 	"jillian's room": "res://sprites/background/jillian_bedroom.png",
@@ -41,6 +45,13 @@ func take_magnifying_glass():
 	LookManager.look_spots["jillian's room"]["jillian laptop"] = "res://sprites/look_spots/laptop.png"
 	LookManager.look_spots["jillian's room"]["jillian laundry basket"] = "res://sprites/look_spots/laundry_basket.png"
 	set_current_room("jillian's room")
+	
+func take_map():
+	taken_map = true
+	background_textures["upstairs hallway"] = "res://sprites/background/upstairs_hallway_2.png"
+	LookManager.look_spots["upstairs hallway"].erase("map")
+	set_current_room("upstairs hallway")
+	EvidenceTracker.evidence.append("map")
 
 func _ready():
 	Input.set_custom_mouse_cursor(load("res://sprites/interface/pointer.png"), 0, Vector2(2, 2))

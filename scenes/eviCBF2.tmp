@@ -1,11 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://nsxlg1300kdl"]
+[gd_scene load_steps=6 format=3 uid="uid://nsxlg1300kdl"]
 
 [ext_resource type="PackedScene" uid="uid://dpin0rlv2nj4q" path="res://scenes/evidence_list.tscn" id="1_ib3lq"]
 [ext_resource type="Script" path="res://scripts/NoNotesBox.gd" id="2_kcou1"]
 [ext_resource type="FontFile" uid="uid://b20ensnf302nl" path="res://fonts/Cat Comic.ttf" id="2_xd6mc"]
 [ext_resource type="Script" path="res://scripts/DescriptionBox.gd" id="4_7d306"]
 [ext_resource type="Script" path="res://scripts/DescriptionLabel.gd" id="5_ehevg"]
-[ext_resource type="Script" path="res://scripts/ExamineButton.gd" id="6_ommp2"]
 
 [node name="EvidenceMenu" type="Control"]
 clip_contents = true
@@ -89,7 +88,7 @@ theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("2_xd6mc")
 theme_override_font_sizes/font_size = 38
 text = "Examine"
-script = ExtResource("6_ommp2")
+script = ExtResource("4_7d306")
 
 [node name="PresentButton" type="Button" parent="."]
 custom_minimum_size = Vector2(200, 80)
@@ -103,4 +102,4 @@ theme_override_fonts/font = ExtResource("2_xd6mc")
 theme_override_font_sizes/font_size = 38
 disabled = true
 text = "Present"
-script = ExtResource("6_ommp2")
+script = ExtResource("4_7d306")

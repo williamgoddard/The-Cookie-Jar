@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://bqqd84fvflucc"]
 
 [ext_resource type="PackedScene" uid="uid://duonupy85wi33" path="res://scenes/menu_background.tscn" id="1_5868n"]
-[ext_resource type="Script" path="res://scenes/full_evidence_menu.gd" id="1_wsxn4"]
+[ext_resource type="Script" path="res://scripts/full_evidence_menu.gd" id="1_wqibe"]
 [ext_resource type="PackedScene" uid="uid://nsxlg1300kdl" path="res://scenes/evidence_menu.tscn" id="2_5ir8a"]
 [ext_resource type="Texture2D" uid="uid://yac8xcu0qidv" path="res://sprites/interface/back_button.png" id="4_y040f"]
 [ext_resource type="Texture2D" uid="uid://42mtve083024" path="res://sprites/interface/back_button_hover.png" id="5_bi4y3"]
@@ -14,7 +14,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_wsxn4")
+script = ExtResource("1_wqibe")
 
 [node name="MenuBackground" parent="." instance=ExtResource("1_5868n")]
 layout_mode = 1
@@ -30,6 +30,13 @@ offset_right = 1103.0
 offset_bottom = 634.0
 grow_horizontal = 1
 grow_vertical = 1
+
+[node name="FullscreenEvidenceLooker" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 135.0
+offset_top = 88.0
+offset_right = 135.0
+offset_bottom = 88.0
 
 [node name="BackButton" type="TextureButton" parent="."]
 layout_mode = 0

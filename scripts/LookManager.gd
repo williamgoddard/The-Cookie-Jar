@@ -35,6 +35,15 @@ var look_spots = {
 		
 	"upstairs hallway":
 		{
+			"jimothy door": "res://sprites/look_spots/jimothy_door.png",
+			"jillian door": "res://sprites/look_spots/jillian_door.png",
+			"lucas door": "res://sprites/look_spots/lucas_door.png",
+			"benjamin door": "res://sprites/look_spots/benjamin_door.png",
+			"bathroom door": "res://sprites/look_spots/bathroom_door.png",
+			"hallway plant": "res://sprites/look_spots/hallway_plant.png",
+			"hallway lightswitch": "res://sprites/look_spots/hallway_lightswitch.png",
+			"jimothy painting": "res://sprites/look_spots/jimothy_painting.png",
+			"map": "res://sprites/look_spots/map.png"
 		},
 		
 	"downstairs hallway":
@@ -70,5 +79,23 @@ func look_spot(key : String):
 			Dialogic.start("look_jillian_laptop")
 		"jillian laundry basket":
 			Dialogic.start("look_jillian_laundry_basket")
+		"jimothy door":
+			Dialogic.start("look-jimothy-door")
+		"jillian door":
+			Dialogic.start("look-jillian-door")
+		"lucas door":
+			Dialogic.start("look-lucas-door")
+		"benjamin door":
+			Dialogic.start("look-benjamin-door")
+		"bathroom door":
+			Dialogic.start("look-bathroom-door")
+		"hallway plant":
+			Dialogic.start("look-hallway-plant")
+		"hallway lightswitch":
+			Dialogic.start("look-hallway-lightswitch")
+		"jimothy painting":
+			Dialogic.start("look-jimothy-painting")
+		"map":
+			Dialogic.start("look-map")
 		_:
 			Dialogic.start("look_fallback")

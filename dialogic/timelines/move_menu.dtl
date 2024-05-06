@@ -20,20 +20,40 @@ elif {Global.current_room} == "upstairs hallway":
 	- Jillian's Room
 		do Global.set_current_room("jillian's room")
 	- Lucas' Room
-		do Global.set_current_room("lucas' room")
+		if {Global.bedrooms_open}:
+			do Global.set_current_room("lucas' room")
+		else:
+			jillian: Hmm... I shouldn't go into other people's bedrooms without permission.
 	- Benjamin's Room
-		do Global.set_current_room("benjamin's room")
+		if {Global.bedrooms_open}:
+			do Global.set_current_room("benjamin's room")
+		else:
+			jillian: Hmm... I shouldn't go into other people's bedrooms without permission.
 	- Jimothy's Room
-		do Global.set_current_room("jimothy's room")
+		if {Global.bedrooms_open}:
+			do Global.set_current_room("jimothy's room")
+		else:
+			jillian: Hmm... I shouldn't go into other people's bedrooms without permission.
 	- Bathroom
-		do Global.set_current_room("bathroom")
+		if {Global.bathroom_open}:
+			do Global.set_current_room("bathroom")
+		else:
+			[color={Global.thought_colour}](Abigail said the bathroom was locked, but maybe I should check for myself, just to be sure.)[/color]
+			I tried opening the bathroom door, but...
+			[color={Global.thought_colour}](Yep, that's definitely locked. I guess Abigail was right.)[/color]
 	- Downstairs
 		do Global.set_current_room("downstairs hallway")
 elif {Global.current_room} == "downstairs hallway":
 	- Abigail's Room
-		do Global.set_current_room("abigail's room")
+		if {Global.bedrooms_open}:
+			do Global.set_current_room("abigail's room")
+		else:
+			jillian: Hmm... I shouldn't go into other people's bedrooms without permission.
 	- Clara's Room
-		do Global.set_current_room("clara's room")
+		if {Global.bedrooms_open}:
+			do Global.set_current_room("clara's room")
+		else:
+			jillian: Hmm... I shouldn't go into other people's bedrooms without permission.
 	- Kitchen
 		do Global.set_current_room("kitchen")
 	- Living Room

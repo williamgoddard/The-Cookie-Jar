@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bh53xglb7qks1" path="res://sprites/interface/evidence icons/fish.png" id="1_au0th"]
 [ext_resource type="FontFile" uid="uid://b20ensnf302nl" path="res://fonts/Cat Comic.ttf" id="2_i0a0e"]
-[ext_resource type="Script" path="res://scenes/evidence_item.gd" id="3_c3jx5"]
+[ext_resource type="Script" path="res://scripts/evidence_item.gd" id="3_guj6b"]
 
 [node name="EvidenceItem" type="Button"]
 custom_minimum_size = Vector2(400, 90)
@@ -13,4 +13,4 @@ theme_override_fonts/font = ExtResource("2_i0a0e")
 theme_override_font_sizes/font_size = 38
 text = "Evidence Name"
 icon = ExtResource("1_au0th")
-script = ExtResource("3_c3jx5")
+script = ExtResource("3_guj6b")

@@ -1,0 +1,6 @@
+jillian: Hmm? What's this lying conveniently on the table for me here?
+I pick up the object and inspect it.
+jillian: Aha! It's a map of the house! How convenient! Perhaps... too convenient...
+do Global.take_map()
+[color=green]Jillian picked up the Map.[/color]
+[color=green]You can view the map by selecting it in the [/color][color=red]\[Notes][/color][color=green] menu.[/color]

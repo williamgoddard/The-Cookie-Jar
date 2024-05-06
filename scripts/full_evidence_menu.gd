@@ -5,4 +5,3 @@ func open_menu():
 	
 func close_menu():
 	visible = false
-		 

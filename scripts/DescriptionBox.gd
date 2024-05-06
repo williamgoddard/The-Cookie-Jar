@@ -5,7 +5,7 @@ func _ready():
 	make_hidden()
 
 func make_shown():
-	position = Vector2( 448, 109)
+	position = Vector2(448, 109)
 	visible = true
 	
 func make_hidden():
