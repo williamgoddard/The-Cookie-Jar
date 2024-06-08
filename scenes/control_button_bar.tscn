@@ -49,6 +49,7 @@ texture_hover = ExtResource("3_ofkxf")
 script = ExtResource("4_7ehcb")
 
 [node name="Label" type="Label" parent="LookButton"]
+layout_mode = 0
 offset_top = 5.0
 offset_right = 192.0
 offset_bottom = 75.0
@@ -72,6 +73,7 @@ texture_hover = ExtResource("3_ofkxf")
 script = ExtResource("4_7ehcb")
 
 [node name="Label" type="Label" parent="TalkButton"]
+layout_mode = 0
 offset_top = 5.0
 offset_right = 192.0
 offset_bottom = 75.0
@@ -95,6 +97,7 @@ texture_hover = ExtResource("3_ofkxf")
 script = ExtResource("14_22654")
 
 [node name="Label" type="Label" parent="MoveButton"]
+layout_mode = 0
 offset_top = 5.0
 offset_right = 192.0
 offset_bottom = 75.0
@@ -118,6 +121,7 @@ texture_hover = ExtResource("3_ofkxf")
 script = ExtResource("4_7ehcb")
 
 [node name="Label" type="Label" parent="NotesButton"]
+layout_mode = 0
 offset_top = 5.0
 offset_right = 192.0
 offset_bottom = 75.0

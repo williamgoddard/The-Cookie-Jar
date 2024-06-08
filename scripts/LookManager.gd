@@ -80,7 +80,7 @@ func look_spot(key : String):
 		"jillian laundry basket":
 			Dialogic.start("look_jillian_laundry_basket")
 		"jimothy door":
-			Dialogic.start("look-jimothy-door")
+			Dialogic.start("look_jimothy_door")
 		"jillian door":
 			Dialogic.start("look-jillian-door")
 		"lucas door":

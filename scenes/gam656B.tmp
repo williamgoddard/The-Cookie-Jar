@@ -24,18 +24,22 @@ script = ExtResource("2_u601v")
 [node name="ControlButtonBar" parent="." instance=ExtResource("2_wys2x")]
 
 [node name="Label" parent="ControlButtonBar/LookButton" index="0"]
+layout_mode = 0
 offset_top = 0.0
 offset_bottom = 70.0
 
 [node name="Label" parent="ControlButtonBar/TalkButton" index="0"]
+layout_mode = 0
 offset_top = 0.0
 offset_bottom = 70.0
 
 [node name="Label" parent="ControlButtonBar/MoveButton" index="0"]
+layout_mode = 0
 offset_top = 0.0
 offset_bottom = 70.0
 
 [node name="Label" parent="ControlButtonBar/NotesButton" index="0"]
+layout_mode = 0
 offset_top = 0.0
 offset_bottom = 70.0
 
@@ -45,9 +49,6 @@ visible = false
 [node name="FullscreenEvidenceLooker" parent="FullEvidenceMenu" index="2"]
 mouse_filter = 0
 script = ExtResource("6_8ucg8")
-
-[node name="BackButton2" parent="FullEvidenceMenu" index="4"]
-visible = false
 
 [node name="BackButton" type="TextureButton" parent="."]
 visible = false
@@ -66,14 +67,7 @@ script = ExtResource("8_xqhkv")
 [connection signal="pressed" from="ControlButtonBar/NotesButton" to="FullEvidenceMenu/EvidenceMenu/ScrollContainer/EvidenceList" method="reset_envidences"]
 [connection signal="pressed" from="ControlButtonBar/NotesButton" to="FullEvidenceMenu/EvidenceMenu/NoNotesBox" method="calculate_if_shown"]
 [connection signal="pressed" from="FullEvidenceMenu/EvidenceMenu/ExamineButton" to="FullEvidenceMenu/FullscreenEvidenceLooker" method="set_picture"]
-[connection signal="pressed" from="FullEvidenceMenu/EvidenceMenu/ExamineButton" to="FullEvidenceMenu/BackButton" method="hide"]
-[connection signal="pressed" from="FullEvidenceMenu/EvidenceMenu/ExamineButton" to="FullEvidenceMenu/BackButton2" method="show"]
 [connection signal="pressed" from="FullEvidenceMenu/BackButton" to="FullEvidenceMenu/EvidenceMenu/DescriptionBox" method="make_hidden"]
-[connection signal="pressed" from="FullEvidenceMenu/BackButton" to="FullEvidenceMenu/EvidenceMenu/ExamineButton" method="make_hidden"]
-[connection signal="pressed" from="FullEvidenceMenu/BackButton" to="FullEvidenceMenu/EvidenceMenu/PresentButton" method="make_hidden"]
-[connection signal="pressed" from="FullEvidenceMenu/BackButton2" to="FullEvidenceMenu/FullscreenEvidenceLooker" method="clear_picture"]
-[connection signal="pressed" from="FullEvidenceMenu/BackButton2" to="FullEvidenceMenu/BackButton" method="show"]
-[connection signal="pressed" from="FullEvidenceMenu/BackButton2" to="FullEvidenceMenu/BackButton2" method="hide"]
 [connection signal="pressed" from="BackButton" to="ControlButtonBar" method="show"]
 
 [editable path="ControlButtonBar"]

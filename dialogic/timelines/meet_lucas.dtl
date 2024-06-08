@@ -1,7 +1,6 @@
 [color={Global.thought_colour}](When I bumped into Jimothy in the hallway, he'd just come out of the kitchen. So, if my deductions are correct...)[/color]
 join lucas 2
-[color={Global.thought_colour}](Aha! It looks like I was right! Lucas is here!)[/color]
-[color={Global.thought_colour}](It looks like he's fiddling with something on the table. I wonder what he's doing. It's time to find out!)[/color]
+[color={Global.thought_colour}](Aha! It looks like I was right! Lucas is here! Time to get some answers!)[/color]
 update lucas 3
 join jillian 1
 jillian: Hello, Lu-
@@ -11,19 +10,40 @@ jillian: Yes, I did. Thanks for asking, Lucas!
 lucas: Yay~!!!! That makes me so happy! Have you seen the weather today? It is such a beautiful day!!!!
 jillian: Not yet. I only just woke up, actually.
 lucas: Ooh! Then, have you had breakfast yet? You need to have breakfast, Jilly Bean! Breakfast is the most important meal of the day!!!!
-jillian: No, not yet. There are some questions I wanted to ask you, Lucas!
-lucas: ... Oh? Questions for me? Of course~!!!! Ask away, I'm listening!!!!
+lucas: Here, have some of my favourite Honey Rainbow Happy Sugar Puffs cereal! It is delicious and nutritious!!!!
+[color={Global.thought_colour}](Oh no! I don't think that stuff is safe for human consumption. I need to get back on topic!)[/color]
+jillian: No thank you! Actually, there are some questions I wanted to ask you, Lucas!
+lucas: ... Oh? Questions for me? Of course~!!!! Ask away, I am listening!!!!
 jillian: Well, first of all, I was just speaking with Jimothy, and he said that you had accused him of stealing something. Can you tell me what happened?
 lucas: Yes, that is right. I do not want it to be true, but I do not think there is any other way. I think he must have taken it.
 jillian: Hmm? What do you mean?
-lucas: It is a package I ordered from online. 
-
-
-jillian: Well, first of all, what were you just doing? I saw you fiddling with something on the table.
-lucas: ...
-lucas: ... What do you mean, Jilly Bean? There is nothing on the table.
-[color={Global.thought_colour}](Hmm? He's right, there isn't anything there. Was I just imagining things?)[/color]
-lucas: Unless you mean... this?
-jillian: Hmm?
-Lucas lifts something up, and holds it out in front of him.
-lucas: Tada!!!! It's my favourite Honey Rainbow Happy Sugar Puffs cereal!
+lucas: It is something very special I ordered from online, and it was supposed to arrive here yesterday. But, I have not seen it at all.
+lucas: I was worried when I woke up this morning and it had not arrived yet, so I thought to myself, I should look at the online tracker to see what has happened...
+lucas: But, It told me that it has already arrived yesterday!!!! And, it said it was handed to a resident!!!!
+jillian: I see. So, your package was delivered yesterday, but someone else took it.
+jillian: But, why do you think it was Jimothy? It could have been any of us, right? Even me!
+lucas: Haha, perhaps if you have a confession to make, then I am listening! But, I have got a reason to think that it was Jimothy who took it.
+lucas: On the tracker, it tells me that the package was delivered at noon yesterday. Do you know what you were doing at that time, Jilly Bean?
+[color=Global.thought_colour](Yesterday at noon? Well, yesterday was Wednesday, so at that time I would have been... Aha!)[/color]
+jillian: I see! At that time yesterday, I wasn't at home! I was in class on campus! So, I suppose we can rule me out as a suspect.
+lucas: Yes! That is exactly what I thought. And it was not just you. Clara, Abby and Benny also had classes at that time...
+lucas: But, I know that Jimothy did not! I am certain because we are in the same classes. He was the only other person who could have been at home when it arrived!!!!
+jillian: Wow, that's some great deduction, Lucas! Have you ever thought about becoming a sidekick?
+lucas: Haha, that depends on how much you are paying me, Jilly Bean! I will also need a generous benefits package and at least 3 months paid vacation time.
+jillian: Hmm... maybe we can come back to that.
+jillian: So, you've established that Jimothy had the opportunity to commit the crime, but to have a full case against him, you'll also need a motive, and some evidence.
+jillian: Do you have any idea why Jimothy would want to steal from you?
+lucas: No, I do not... But, I have been getting a feeling that Jimothy does not like me anymore. I do not want to believe it, but I wonder if that is why he did it.
+jillian: I see. In that case, I can look into it some more for you, and I'll let you know if I find anything!
+lucas: Ooh! Thank you so much, Jilly Bean~!!!! Please tell me if you find my package as well!
+lucas: In return, you can have some of my delicious Honey Rainbow Happy Sugar Puffs cereal!!!! it is the tastiest way to start your day!!!!
+[color={Global.thought_colour}](Yikes, not again! Time to take my leave!)[/color]
+jillian: No thank you, I'm too young to die!
+lucas: Haha, alright then, Jilly Bean!!!! That just means there is more for me! I will see you later~!!!!
+leave lucas
+update jillian 2
+[color={Global.thought_colour}](Phew, that was a close one. But, I am actually a little hungry. Perhaps it's time for a light snack...)[/color]
+[color={Global.thought_colour}](And there's no better way to start the day than with some milk and cookies!)[/color]
+[color={Global.thought_colour}](Now... where did I put my cookie jar?)[/color]
+[color={Global.thought_colour}](...)[/color]
+[color={Global.thought_colour}](... Huh?!)[/color]

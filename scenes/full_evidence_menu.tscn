@@ -48,4 +48,14 @@ texture_normal = ExtResource("4_y040f")
 texture_hover = ExtResource("5_bi4y3")
 script = ExtResource("6_hkd82")
 
+[node name="BackButton2" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 1008.0
+offset_top = 79.0
+offset_right = 1108.0
+offset_bottom = 179.0
+texture_normal = ExtResource("4_y040f")
+texture_hover = ExtResource("5_bi4y3")
+script = ExtResource("6_hkd82")
+
 [connection signal="pressed" from="BackButton" to="." method="close_menu"]
